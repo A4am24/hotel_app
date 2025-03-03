@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+</head>
+<body>
+<h1>Listing all hotels</h1>
+
+<table border="1">
+  <tr><th>Hotel ID</th><th>Hotel Name</th> <th>Hotel Location</th><th>Hotel Rating</th></tr>
+  {% for hotels in hotels %}
+  <tr><td>{{ hotels.hotel_id }}</td><td>{{ hotels.hotel_name }}</td><td>{{ hotels.hotel_location }}</td><td>{{hotels.hotel_rating }}</td><td><button name="edit">UPDATE</button></td></tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
