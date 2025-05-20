@@ -1,20 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
 {% load static %}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-   <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel App</title>
+   <link rel="stylesheet"  href="{% static 'css/styles.css' %}">
 </head>
+
 <body>
-<h1>Listing all hotels</h1>
+<header>
+    <div class="container nav">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#createlogin">Create Login</a></li>
+                <li><a class="active" href="hotel_view">View Hotels</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container head">
+    <h1>View all hotels!</h1>
+    <p>Select from a range of comfortable hotels across the country. Look through the hotel's names, locations, ratings and prices per night to ensure you find the right stay for you.</p>
+</div>
+
+<section>
+    <h2>Find the perfect stay around the UK!</h2>
+</section>
+
+<section class="hotel viewings">
+    <h3>North of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>East of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>South of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
+
+<section class="hotel viewings">
+    <h3>West of England</h3>
+    <div class="hotel-grid">
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 1">
+            <h4>UK Stays Manchester</h4>
+            <p>This UK Stays Hotel is located in the busy city of Manchester, well known for its Football team Manchester United. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 2">
+            <h4>UK Stays Liverpool</h4>
+            <p>This UK Stays Hotel is located in the Historic city of Liverpool, famously home to the Beatles. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 3">
+            <h4>UK Stays Newcastle</h4>
+            <p>This UK Stays Hotel is located in Newcastle, best known for its rich industrial history and modern nightlife. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 4">
+            <h4>UK Stays York</h4>
+            <p>This UK Stays Hotel is located in York, with its medieval architecture built throughout, as well as numerous museums, it's a perfect place for to explore. Rating: 4/5, Price Per Night: £90.00</p>
+        </div>
+        <div class="hotel-card">
+            <img src="{% static 'images/Raffles-London-Granville-Bathroom.webp' %}" alt="Hotel North 5">
+            <h4>UK Stays Blackpool</h4>
+            <p>This UK Stays Hotel is located in Blackpool, known all over the UK for having one of the best displays of dazzling lights in the Blackpool Illuminations. Rating: 3/5, Price Per Night: £80.00</p>
+        </div>
+    </div>
+</section>
 
 <table border="1">
-  <tr><th>Hotel ID</th><th>Hotel Name</th> <th>Hotel Location</th><th>Hotel Rating</th></tr>
+  <tr><th>Hotel ID</th><th>Hotel Name</th> <th>Hotel Location</th> <th>Hotel Rating</th> <th>Price Per Night</th></tr>
   {% for hotels in hotels %}
-  <tr><td>{{ hotels.hotel_id }}</td><td>{{ hotels.hotel_name }}</td><td>{{ hotels.hotel_location }}</td><td>{{hotels.hotel_rating }}</td><td><button name="edit">UPDATE</button></td></tr>
+  <tr><td>{{ hotels.hotel_id }}</td><td>{{ hotels.hotel_name }}</td><td>{{ hotels.hotel_location }}</td><td>{{ hotels.hotel_rating }}</td><td>{{ hotels.price_per_night }}</td><td><button name="edit">UPDATE</button></td></tr>
   {% endfor %}
 </table>
+
+<!-- Form html -->
+
+ <form action="{% url 'hotel_view' %}" method="POST">
+    {% csrf_token %}
+        <div class="form-group">
+            <label >First name</label>
+            <input type="text" class="form-control" name="fname" placeholder="First name" required>
+        </div>
+        <div class="form-group">
+            <label >Surname</label>
+            <input type="text" class="form-control" name="sname" placeholder="Surname" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number here" required>
+        </div>
+    <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>

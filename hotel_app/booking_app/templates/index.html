@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
 {% load static %}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet"  href="{%  static 'css/styles.css' %}">
+
 </head>
 <body>
-<h1 >Adam's Booking</h1>
+
+<div class="topnav">
+    <a class="active" href="index.html">Home</a>
+
+    <a href="hotel_view">View Hotels</a>
+    <a href="#login">Login</a>
+    <a href="#booking">Booking</a>
+    <a href="#createlogin">Create Login</a>
+
+</div>
+
+<h1 >Hotel Booking</h1>
+    <ul>
+        <li><a href="{% url 'home' %}">Login</a></li>
+    </ul>
 </body>
 </html>
